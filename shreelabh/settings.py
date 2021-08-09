@@ -79,9 +79,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-         'OPTIONS': {
-            'init_command': 'SET innodb_strict_mode=1',
-        },
+        #  'OPTIONS': {
+        #     'init_command': 'SET innodb_strict_mode=1',
+        # },
+        'USER': '<your_username>',
+        'PASSWORD': '<your_mysql_password>',
+        'HOST': '<your_mysql_hostname>',
     }
 }
 
